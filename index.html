@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulazione Concorso Operatore Socio Sanitario - Modulo 25</title>
+    <title>Simulazione Concorso Operatore Socio Sanitario </title>
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -233,7 +233,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Simulazione Concorso Operatore Socio Sanitario - Modulo 25</h1>
+        <h1>Simulazione Concorso Operatore Socio Sanitario </h1>
         <div class="question-nav" id="questionNav"></div>
         <div id="timer">Tempo rimanente: <span id="time">30:00</span></div>
         <div id="quiz"></div>
@@ -248,66 +248,7 @@
     <script>
         // Array di domande (721-750) con opzioni mescolate casualmente
         const questions = [
-            {
-                question: "Cos’è l’artrite reumatoide?",
-                options: ["Un’infiammazione della vescica", "Una malattia autoimmune delle articolazioni", "Un accumulo di liquido nei polmoni"],
-                correct: "Una malattia autoimmune delle articolazioni",
-                explanation: "L’artrite reumatoide è una malattia autoimmune che causa infiammazione cronica delle articolazioni, con sintomi come dolore e rigidità mattutina. Non è un’infiammazione della vescica né un edema polmonare. Gli OSS devono monitorare il dolore, assistere nella mobilità e segnalare sintomi."
-            },
-            {
-                question: "Quale è un segno tipico dell’artrite reumatoide?",
-                options: ["Rigidità mattutina", "Poliuria", "Ittero"],
-                correct: "Rigidità mattutina",
-                explanation: "La rigidità mattutina, che dura più di un’ora, è un segno tipico dell’artrite reumatoide, con gonfiore articolare. La poliuria e l’ittero non sono correlati. Gli OSS devono monitorare la mobilità, applicare calore se prescritto e segnalare deformità."
-            },
-            {
-                question: "Cos’è l’artrosi?",
-                options: ["Un’infiammazione del fegato", "Una malattia degenerativa delle articolazioni", "Un blocco renale"],
-                correct: "Una malattia degenerativa delle articolazioni",
-                explanation: "L’artrosi è una malattia degenerativa delle articolazioni, con usura della cartilagine, che causa dolore e limitazione dei movimenti. Non è un’infiammazione del fegato né un blocco renale. Gli OSS devono assistere nella mobilità, garantire ausili e segnalare sintomi."
-            },
-            {
-                question: "Quale è un segno tipico dell’artrosi?",
-                options: ["Dolore articolare da carico", "Oliguria", "Ittero"],
-                correct: "Dolore articolare da carico",
-                explanation: "Il dolore articolare da carico, che peggiora con il movimento, è un segno tipico dell’artrosi, con crepitii. L’oliguria e l’ittero non sono correlati. Gli OSS devono monitorare il dolore, promuovere esercizi leggeri e segnalare gonfiore."
-            },
-            {
-                question: "Cos’è la gotta?",
-                options: ["Un’infiammazione della vescica", "Un’artrite da accumulo di acido urico", "Un accumulo di liquido nei polmoni"],
-                correct: "Un’artrite da accumulo di acido urico",
-                explanation: "La gotta è un’artrite causata dall’accumulo di cristalli di acido urico nelle articolazioni, con sintomi come dolore acuto e gonfiore. Non è un’infiammazione della vescica né un edema polmonare. Gli OSS devono monitorare il dolore, garantire una dieta adeguata e segnalare sintomi."
-            },
-            {
-                question: "Quale è un segno tipico della gotta?",
-                options: ["Dolore acuto all’alluce", "Poliuria", "Ittero"],
-                correct: "Dolore acuto all’alluce",
-                explanation: "Il dolore acuto all’alluce, spesso notturno, è un segno tipico della gotta, con arrossamento. La poliuria e l’ittero non sono correlati. Gli OSS devono monitorare le articolazioni, applicare freddo se prescritto e segnalare febbre."
-            },
-            {
-                question: "Cos’è il lupus eritematoso sistemico?",
-                options: ["Un’infiammazione del fegato", "Una malattia autoimmune sistemica", "Un blocco renale"],
-                correct: "Una malattia autoimmune sistemica",
-                explanation: "Il lupus eritematoso sistemico è una malattia autoimmune che colpisce più organi, con sintomi come eritema a farfalla e artralgie. Non è un’infiammazione del fegato né un blocco renale. Gli OSS devono monitorare la pelle, garantire farmaci e segnalare sintomi."
-            },
-            {
-                question: "Quale è un segno tipico del lupus eritematoso sistemico?",
-                options: ["Eritema a farfalla", "Oliguria", "Ittero"],
-                correct: "Eritema a farfalla",
-                explanation: "L’eritema a farfalla, sul viso, è un segno tipico del lupus eritematoso sistemico, con fotosensibilità. L’oliguria e l’ittero possono essere secondari. Gli OSS devono proteggere dalla luce solare, monitorare i sintomi e segnalare febbre."
-            },
-            {
-                question: "Cos’è la spondilite anchilosante?",
-                options: ["Un’infiammazione della vescica", "Un’artrite cronica della colonna vertebrale", "Un accumulo di liquido nei polmoni"],
-                correct: "Un’artrite cronica della colonna vertebrale",
-                explanation: "La spondilite anchilosante è un’artrite cronica che colpisce la colonna vertebrale e le articolazioni sacroiliache, con sintomi come dolore lombare. Non è un’infiammazione della vescica né un edema polmonare. Gli OSS devono monitorare la postura, promuovere esercizi e segnalare sintomi."
-            },
-            {
-                question: "Quale è un segno tipico della spondilite anchilosante?",
-                options: ["Dolore lombare notturno", "Poliuria", "Ittero"],
-                correct: "Dolore lombare notturno",
-                explanation: "Il dolore lombare notturno, che migliora con il movimento, è un segno tipico della spondilite anchilosante. La poliuria e l’ittero non sono correlati. Gli OSS devono monitorare la mobilità, garantire il comfort e segnalare rigidità."
-            },
+           
             {
                 question: "Cos’è la fibromialgia?",
                 options: ["Un’infiammazione del fegato", "Un disturbo con dolore muscoloscheletrico diffuso", "Un blocco renale"],
